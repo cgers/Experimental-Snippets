@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+*.egg-info/
+dist/
+build/
+
+# JavaScript/Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+.npm
+.yarn-integrity
+
+# Java
+*.class
+*.jar
+*.war
+target/
+.gradle/
+
+# C++
+*.o
+*.obj
+*.exe
+*.out
+*.app
+
+# C#
+bin/
+obj/
+*.dll
+*.pdb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+.DS_Store
