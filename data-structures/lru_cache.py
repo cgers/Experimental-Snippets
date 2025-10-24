@@ -43,9 +43,11 @@ class LRUCache:
         If cache is full, removes least recently used item.
         """
         if key in self.cache:
-            # Update existing key
+            # Update existing key - set value before moving for atomic operation
+            self.cache[key] = value
             self.cache.move_to_end(key)
-        self.cache[key] = value
+        else:
+            self.cache[key] = value
         
         # Remove least recently used item if over capacity
         if len(self.cache) > self.capacity:

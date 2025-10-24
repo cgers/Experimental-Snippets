@@ -57,7 +57,7 @@ if __name__ == "__main__":
         db = DatabaseConnection()
         print(f"Thread {threading.current_thread().name}: {id(db)}")
     
-    threads = [threading.Thread(target=create_connection, name=f"Thread-{i}") 
+    threads = [threading.Thread(target=create_connection, name=f"Thread-{i}")
                for i in range(5)]
     
     print("\nTesting thread safety:")

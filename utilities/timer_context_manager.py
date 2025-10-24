@@ -51,10 +51,9 @@ def timer(name="Code block"):
 if __name__ == "__main__":
     # Using class-based context manager
     print("Class-based timer:")
-    with Timer("Fibonacci calculation"):
-        def fib(n):
-            return n if n < 2 else fib(n-1) + fib(n-2)
-        result = fib(30)
+    with Timer("Sum calculation"):
+        # Demonstrate timing a computation
+        result = sum(i**2 for i in range(100000))
         print(f"Result: {result}")
     
     # Using function-based context manager
